@@ -1,0 +1,131 @@
+/* roboto-regular - latin */
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/roboto-v50-latin-regular.woff2') format('woff2'); 
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; 
+}
+
+/* roboto-700 - latin */
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/roboto-v50-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;  
+}
+
+
+/* == CSS RESET == */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul, ol {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+
+:root {
+  /* == COLOR PALLETTE == */
+  /* Primary Color */
+  --clr-red: hsl(4, 100%, 67%);
+
+  /* Neutral Colors */
+  --clr-grey: hsl(0, 0%,58%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-blue-700: hsl(235, 18%, 26%);
+  --clr-blue-800: hsl(234, 29%, 20%);
+
+  /* == TYPOGRAPHY == */
+  /* Font Family */
+  --ff-body: "Roboto", sans-serif;
+
+  /* Font Size */
+  --fs-body: 1rem;
+
+  /* Font Weights */
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+}
+
+body {
+  min-height: 100svh;
+  width: 88%;
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+}
