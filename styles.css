@@ -44,12 +44,6 @@ ul, ol {
   list-style: none;
 }
 
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-}
-
 /* Set shorter line heights on headings and interactive elements */
 h1, h2, h3, h4,
 button, input, label {
@@ -123,9 +117,33 @@ textarea:not([rows]) {
 }
 
 body {
+  min-height: 100vh;
   min-height: 100svh;
-  width: 88%;
-  max-width: 28rem;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background:  var(--clr-white);
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
+
+.main__content {
+  width: 100%;
+  max-width: 47.9375rem;
+  background: inherit;
+}
+
+.main__signup--block {
+  width: 100%;
+}
+
+.main__illustration {
+  width: 100%;
+  height: auto;
+
+}
+
