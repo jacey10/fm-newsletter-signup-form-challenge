@@ -15,9 +15,11 @@
 
       <section class="main__signup--block">
 
-        <div class="main__illustration">
-          <img src="assets/images/illustration-sign-up-mobile.svg" alt="">
-        </div>
+        <picture>
+          <source media="(min-width:64rem)" srcset="assets/images/illustration-sign-up-desktop.svg" width="400" height="593">
+          <source media="(min-width:48rem)" srcset="assets/images/illustration-sign-up-tablet.svg" width="528" height="360">
+          <img src="assets/images/illustration-sign-up-mobile.svg" alt="main__illustration" width="375" height="284">
+        </picture>
 
         <section class="main__signup--copy">
           <h1>Stay updated!</h1>
