@@ -22,33 +22,32 @@
         </picture>
 
         <section class="main__signup--copy">
-          <h1>Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <h1 class="main__signup--heading">Stay updated!</h1>
+          <p class="main__signup--text">Join 60,000+ product managers receiving monthly updates on:</p>
 
           <ul>
             <li>Product discovery and building what matters</li>
             <li>Measuring to ensure updates are a success</li>
             <li>And much more!</li>
           </ul>
+
+          <!-- Sign-up form starts -->
+          <form id="form" class="main__signup--form" novalidate>
+            <div class="email-error-container">
+              <label for="email"><strong>Email address</strong></label>
+              <span aria-live="polite" id="errorMessage"><strong>Valid email required</strong></span>
+            </div>
+
+            <div class="field-button-container">
+              <input id="email" name="email" type="email" placeholder="email@company.com">
+              <button type="submit">Subscribe to monthly newsletter</button>
+            </div>
+            <!-- Sign-up form end -->
+          
+          </form>
         </section>
 
-        <!-- Sign-up form starts -->
-        <form class="main__signup--form" novalidate>
-          <div class="">
-            <p>Email address</p>
-            <span id="errorMessage">Valid email required</span>
-          </div>
-
-          <div class="input-button">
-            
-
-
-            <input type="email" id="username" placeholder="email@company.com">
-            <button type="submit">Subscribe to monthly newsletter</button>
-          </div>
-          <!-- Sign-up form end -->
         
-        </form>
       </section>
 
       
