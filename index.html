@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
     <link rel="preload" href="assets/fonts/roboto-v50-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/roboto-v50-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/roboto-v52   0-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <link delay rel="stylesheet" href="script.js">
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
@@ -46,20 +46,25 @@
           
           </form>
         </section>
-
-        
       </section>
 
-      
       <section class="success-block">
         <!-- Success message start -->
         <div class="success-message">
-          <img src="assets/images/icon-success.svg" alt="">
-          <h1>Thanks for subscribing!</h1>
-          <p> A confirmation email has been sent to <a href="#"><strong>ash@loremcompany.com</strong></a>. Please open it and click the button inside to confirm your subscription.</p>
-          <button type="button">Dismiss message</button>
-          <!-- Success message end -->
+          <div class="msg-container">
+            <img src="assets/images/icon-success.svg" alt="">
+            <h1>Thanks for subscribing!</h1>
+            <p> A confirmation email has been sent to <a href="#"><strong>ash@loremcompany.com</strong></a>. Please open it and click the button inside to confirm your subscription.</p>
+          </div>
+
+          <div class="btn-container">
+           <button type="button">Dismiss message</button>
+          </div>
         </div>
+        <!-- Success message end -->
+       
+
+        
       </section>
       
     </main>

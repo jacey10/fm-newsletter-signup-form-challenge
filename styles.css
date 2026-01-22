@@ -231,12 +231,12 @@ picture .main__illustration {
 }
 
 .success-block {
-  height: 100%;
-  min-height: 100vh;
   min-height: 100svh;
   background: var(--clr-white);
   /*display: none;*/
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .success-block.show {
@@ -244,10 +244,9 @@ picture .main__illustration {
 }
 
 .success-message {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10rem;
   padding: var(--space-md);
 }
 
@@ -264,7 +263,6 @@ picture .main__illustration {
 }
 
 .success-message p {
-  margin-block-end: 10rem;
   color: var(--clr-blue-700);
   font-weight: var(--fw-regular);
 }
@@ -273,15 +271,26 @@ picture .main__illustration {
   text-decoration: none;
 }
 
+.msg-container {
+  margin-block-start: 3rem;
+}
+
+.msg-container, .btn-container {
+  width: 100%;
+}
+
 .success-message button {
-  display: block;
   all: unset;
+  height: 3em;
+  width: 100%;
+  box-sizing: border-box;
   background: var(--clr-blue-800);
-  color: var(--clr-white);
-  padding: clamp(0.5rem, 1vw, 1rem) clamp(3.2rem, 2.5vw, 6rem);
   border-radius: var(--space-xs);
+  color: var(--clr-white);
+  font-size: 1rem;
   text-align: center;
   cursor: pointer;
+ 
 }
 
 
@@ -323,6 +332,7 @@ picture .main__illustration {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 0;
     background: var(--clr-white);
     border-radius: 1rem;
     padding: var(--space-lg);
@@ -342,6 +352,10 @@ picture .main__illustration {
   .success-message p {
     font-size: 0.85rem;
     margin-block-end: 1.5rem;
+  }
+
+  .msg-container {
+    margin-block-start: 0;
   }
 
   .success-message button {
