@@ -16,7 +16,6 @@
   font-display: swap;  
 }
 
-
 /* == CSS RESET == */
 
 /* Box sizing rules */
@@ -149,8 +148,7 @@ picture .main__illustration {
 }
 
 .main__signup--block {
-  /*display: block;*/
-  display: none;
+  display: block;
 }
 
 .main__signup--copy {
@@ -233,14 +231,13 @@ picture .main__illustration {
 .success-block {
   min-height: 100svh;
   background: var(--clr-white);
-  /*display: none;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: none;
 }
 
 .success-block.show {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .success-message {
@@ -303,8 +300,7 @@ picture .main__illustration {
   }
 
   .main__signup--block {
-    /*display: flex;*/
-    display: none;
+    display: flex;
     flex-direction: column;
     margin: 1.5rem;
   }
@@ -316,9 +312,7 @@ picture .main__illustration {
   .success-block {
     width: 100%;
     background: var(--clr-blue-800);
-    /*display: none;*/
-    display: grid;
-    place-items: center;
+    display: none;
   }
 
   .success-block.show {
@@ -327,7 +321,7 @@ picture .main__illustration {
   }
 
   .success-message {
-    width: clamp(20rem, 30vw, 30rem);
+    width: 23.175rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -387,8 +381,7 @@ picture .main__illustration {
   }
 
   .main__signup--block {
-    /*display: grid;*/
-    display: none;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: var(--clr-white);
     border-radius: 1.2rem;
@@ -450,38 +443,6 @@ picture .main__illustration {
   .field-button-container button:hover {
     transform: translateY(-3px);
   }
-
-  /*.success-block {
-    width: 100%;
-    height: 100vh;
-    background: var(--clr-blue-800);
-    display: grid;
-    place-items: center;
-  }
-
-  .success-message {
-    display: block;
-    width: 30%;
-    background: var(--clr-white);
-    border-radius: 0.6rem;
-    padding: var(--space-lg);
-  }
-
-  .success-message img {
-    width: 3rem;
-    height: 3rem;
-    margin-block-end: var(--space-md);
-  }
-
-  .success-message h1 {
-    margin-block-end: 0.8rem;
-    line-height: 1.1;
-  }
-
-  .success-message p {
-    font-size: 0.85rem;
-    margin-block-end: 1.2rem;
-  }*/
 
   .success-message button {
     font-size: 0.8rem;
