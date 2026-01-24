@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
     <link rel="preload" href="assets/fonts/roboto-v50-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="assets/fonts/roboto-v52   0-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/roboto-v50-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="styles.css">
     <link delay rel="stylesheet" href="script.js">
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
@@ -15,11 +15,13 @@
 
       <section class="main__signup--block">
 
-        <picture>
-          <source media="(min-width:64rem)" srcset="./assets/images/illustration-sign-up-desktop.svg" width="400" height="593">
-          <source media="(min-width:48rem)" srcset="./assets/images/illustration-sign-up-tablet.svg" width="528" height="360">
-          <img class="main__illustration" src="./assets/images/illustration-sign-up-mobile.svg" alt="" width="375" height="284">
-        </picture>
+        <div class="image-wrapper">
+          <picture class="newsletter-image">
+            <source media="(min-width:64rem)" srcset="assets/images/illustration-sign-up-desktop.svg" width="400" height="593">
+            <source media="(min-width:48rem)" srcset="./assets/images/illustration-sign-up-tablet.svg" width="528" height="360">
+            <img class="main__illustration" src="assets/images/illustration-sign-up-mobile.svg" alt="" width="375" height="284">
+          </picture>
+        </div>
 
         <section class="main__signup--copy">
           <h1 class="main__signup--heading">Stay updated!</h1>
@@ -48,7 +50,7 @@
       <section class="success-block">
         <div class="success-message">
           <div class="msg-container">
-            <img src="./assets/icons/icon-success.svg" alt="">
+            <img src="assets/icons/icon-success.svg" alt="">
             <h1>Thanks for subscribing!</h1>
             <p> A confirmation email has been sent to <a href="#"><strong>ash@loremcompany.com</strong></a>. Please open it and click the button inside to confirm your subscription.</p>
           </div>
