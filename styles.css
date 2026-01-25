@@ -136,14 +136,13 @@ body {
 }
 
 .image-wrapper {
-  max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
-img {
+.image-wrapper img {
   display: block;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -291,22 +290,21 @@ img {
 }
 
 
-@media screen and (min-width:48rem) {
+@media screen and (min-width:34.375rem) {
   body {
-    display: flex;
-    align-items: center;
-    justify-items: center;
+    display: grid;
+    place-items: center;
     font-size: 1.2rem;
+    background: var(--clr-blue-800);
+    margin-block: 1rem;
   }
 
-  .main__signup--block {
-    display: flex;
-    flex-direction: column;
-    margin: 1.5rem;
-  }
-
-  picture {
-    margin-block-end: 1.5rem;
+  .main__newsletter--signup {
+    width: clamp(30rem, 60vw, 50rem);
+    min-height: fit-content;
+    background: var(--clr-white);
+    padding: 1.5rem;
+    border-radius: 1rem;
   }
 
   .success-block {
@@ -368,19 +366,23 @@ img {
 }
 
 
-@media screen and (min-width:64rem) {
+@media screen and (min-width:55.5rem) {
   body {
     display: grid;
     place-items: center;
     background: var(--clr-blue-800);
-    font-size: 0.65rem;
+    font-size: 0.8rem;
+    margin: 0;
   }
 
   .main__newsletter--signup {
-    width: 50%;
+    width: 45rem;
+    margin: 0;
+    padding: 0;
   }
 
   .main__signup--block {
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: var(--clr-white);
@@ -392,18 +394,25 @@ img {
 
   .image-wrapper {
     order: 2;
-    padding: 0;
-    margin: 0;
+    height: 100%;
+    overflow: hidden;
   }
 
-  .newsletter-image {
-    align-self: stretch;
+  .image-wrapper picture {
+    display: block;
+    height: 100%;
   }
 
-  
+  .image-wrapper img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
 
   .main__signup--heading {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .main__signup--copy {
@@ -414,7 +423,7 @@ img {
 
   .main__signup--copy ul {
     margin-inline-start: -0.2rem;
-    margin-block-end: 0.7rem;
+    margin-block-end: 1rem;
   }
 
   .main__signup--copy ul li {
@@ -430,7 +439,7 @@ img {
   }
 
   .email-error-container {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
   }
 
   .field-button-container {
@@ -438,12 +447,13 @@ img {
   }
 
   .field-button-container input, .field-button-container button {
-    padding: 0.5rem;
+    padding: 0.6rem;
     border-radius: 0.5rem;
   }
 
   .field-button-container button {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
+    padding: 0.7rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
