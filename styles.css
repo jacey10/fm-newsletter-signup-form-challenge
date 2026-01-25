@@ -451,14 +451,14 @@ body {
   }
 
   .field-button-container button {
-    background: var(--clr-blue-800);
+    background-color: var(--clr-blue-800);
     font-size: 0.7rem;
     padding: 0.7rem;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
   }
 
   .field-button-container button:hover {
-    background: linear-gradient(to right, var(--clr-red), var(--clr-orangered));
+    background-color: linear-gradient(to right, var(--clr-red), var(--clr-orangered));
     transform: translateY(-3px);
   }
 
