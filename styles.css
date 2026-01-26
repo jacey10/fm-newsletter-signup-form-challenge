@@ -1,3 +1,5 @@
+/* == FONT FACES == */
+
 /* roboto-regular - latin */
 @font-face {
   font-family: 'Roboto';
@@ -135,19 +137,15 @@ body {
   height: auto;
 }
 
-.image-wrapper {
+.image--container {
   height: 100%;
 }
 
-.image-wrapper img {
+.image--container img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: contain;
-}
-
-.main__signup--block {
-  display: block;
 }
 
 .main__signup--copy {
@@ -155,8 +153,8 @@ body {
 }
 
 .main__signup--heading {
-  font-weight: var(--fw-bold);
   font-size: clamp(2.5rem, 4vw, 3rem);
+  font-weight: var(--fw-bold);
   margin-block-end: var(--space-md);
 }
 
@@ -166,13 +164,13 @@ body {
 }
 
 .main__signup--copy ul{
-  padding-inline-start: 0; /* remove default padding for ul */
+  padding-inline-start: 0;
   margin-block-end: var(--space-lg);
   line-height: 1.4;
 }
 
 .main__signup--copy ul li {
-  margin-block-end: 1rem;
+  margin-block-end: var(--space-sm);
   padding-inline-start: var(--space-lg);
   position: relative;
 }
@@ -195,7 +193,6 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 0.8rem;
-  /*font-size: clamp(0.8rem, 2.3vw, 2rem);*/
   margin-block-end: 0.5rem;
 }
 
@@ -207,79 +204,74 @@ body {
 
 .field-button-container input, button  {
   all: unset;
-  padding: 0.8rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  border: 1px solid var(--clr-grey);
 }
 
 .field-button-container input {
+  border: 1px solid var(--clr-grey);
+  padding-block: 0.8rem;
   padding-inline-start: 1.5rem;
 }
 
 .field-button-container button {
   background-color: var(--clr-blue-800);
   color: var(--clr-white);
-  text-align: center;
-  padding-block: 1rem;
   font-size: 0.95rem;
-  /*font-size: clamp(0.95rem, 2.3vw, 2rem);*/
   font-weight: var(--fw-bold);
+  padding-block: 1rem;
+  text-align: center;
 }
 
-.success-block {
+.main__success--block {
   min-height: 100svh;
   background: var(--clr-white);
-  display: none;
-}
-
-.success-block.show {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.success-message {
+.hidden {
+  display: none !important;
+}
+
+.success--message {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10rem;
   padding: var(--space-md);
 }
 
-.success-message img {
+.success--message img {
   width: 4rem;
   height: 4rem;
   margin-block-end: var(--space-xlg);
 }
 
-.success-message h1 {
+.success--message h1 {
   font-size: clamp(2.5rem, 2.5vw, 3rem);
   margin-block-end: var(--space-lg);
 }
 
-.success-message p {
+.success--message p {
   color: var(--clr-blue-700);
   font-weight: var(--fw-regular);
 }
 
-.success-message p a {
-  text-decoration: none;
-}
-
-.msg-container {
+.message--container {
   margin-block-start: 3rem;
 }
 
-.msg-container, .btn-container {
+.message--container, .button--container {
   width: 100%;
 }
 
-.success-message button {
+.success--message button {
   all: unset;
   height: 3em;
   width: 100%;
   box-sizing: border-box;
-  background-color: var(--clr-blue-800);
+  background: var(--clr-blue-800);
   border-radius: var(--space-xs);
   color: var(--clr-white);
   font-size: 1rem;
@@ -288,99 +280,50 @@ body {
 }
 
 
-@media screen and (min-width:34.375rem) {
+@media screen and (min-width:23.5rem) {
   body {
-    display: grid;
-    place-items: center;
-    font-size: 1.2rem;
-    background: var(--clr-blue-800);
-    margin-block: 1rem;
+    padding: 1.5rem;
   }
 
-  .main__newsletter--signup {
-    width: clamp(30rem, 60vw, 50rem);
-    min-height: fit-content;
+  .main__signup--copy {
+    padding-inline: 0;
+  }
+}
+
+@media screen and (min-width:26.625rem) {
+  body {
+    background: var(--clr-blue-800);
+  }
+
+  .main__signup--block {
+    width: clamp(22rem, 65vw, 45rem);
     background: var(--clr-white);
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius: var(--space-sm);
+    margin: 0 auto;
   }
 
-  .success-block {
-    width: 100%;
-    background: var(--clr-blue-800);
-    display: none;
+  .main__signup--copy {
+    padding-inline: 0;
   }
-
-  .success-block.show {
-    display: grid;
-    place-items: center;
-  }
-
-  .success-message {
-    width: 23.175rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 0;
-    background: var(--clr-white);
-    border-radius: 1rem;
-    padding: var(--space-lg);
-  }
-
-  .success-message img {
-    width: 3rem;
-    height: 3rem;
-    margin-block-end: var(--space-md);
-  }
-
-  .success-message h1 {
-    margin-block-end: 0.8rem;
-    line-height: 1.1;
-  }
-
-  .success-message p {
-    font-size: 0.85rem;
-    margin-block-end: 1.5rem;
-  }
-
-  .msg-container {
-    margin-block-start: 0;
-  }
-
-  .success-message button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: stretch;  
-    white-space: nowrap; 
-    text-align: center;    
-    font-size: 1rem;        
-    line-height: 1;
-    padding: 1em 1.2em;
-    font-weight: var(--fw-regular);
-  }
-
 }
 
 
-@media screen and (min-width:55.5rem) {
+@media screen and (min-width:55rem) {
   body {
     display: grid;
     place-items: center;
     background: var(--clr-blue-800);
     font-size: 0.8rem;
-    margin: 0;
-  }
-
-  .main__newsletter--signup {
-    width: 45rem;
-    margin: 0;
     padding: 0;
   }
 
+  .main__newsletter--signup {
+    display: contents;
+  }
+
   .main__signup--block {
-    width: 100%;
+    width: 45rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background: var(--clr-white);
@@ -390,7 +333,7 @@ body {
     margin: 0;
   }
 
-  .image-wrapper {
+  .image--container {
     order: 2;
     height: 100%;
     overflow: hidden;
@@ -416,6 +359,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1rem;
   }
 
   .main__signup--copy ul {
@@ -424,7 +368,7 @@ body {
   }
 
   .main__signup--copy ul li {
-    margin-block-end: 0.7rem;
+    margin-block-end: 0.8rem;
     margin-inline-start: -0.1rem;
   }
 
@@ -440,33 +384,83 @@ body {
   }
 
   .field-button-container {
-    gap: 0.9rem;
+    gap: 1.2rem;
   }
 
   .field-button-container input, .field-button-container button {
-    padding: 0.6rem;
     border-radius: 0.5rem;
+    padding: 0.8rem;
   }
 
   .field-button-container button {
-    background-color: var(--clr-blue-800);
+    background: var(--clr-blue-800);
     font-size: 0.9rem;
-    padding: 0.8rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
   }
 
   .field-button-container button:hover {
-    background-color: linear-gradient(to right, var(--clr-red), var(--clr-orangered));
-    transform: translateY(-3px);
+    background: linear-gradient(to right, var(--clr-red), var(--clr-orangered));
   }
 
-  .success-message button {
+  .main__success--block {
+    width: 100%;
+    background: var(--clr-blue-800);
+    display: grid;
+    place-items: center;
+  }
+
+  .success--message {
+    width: 23.175rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    background: var(--clr-white);
+    border-radius: 1rem;
+    padding: var(--space-lg);
+  }
+
+  .success--message img {
+    width: 3rem;
+    height: 3rem;
+    margin-block-end: var(--space-md);
+  }
+
+  .success--message h1 {
+    margin-block-end: 0.8rem;
+    line-height: 1.1;
+  }
+
+  .success--message p {
+    font-size: 0.85rem;
+    margin-block-end: 1.5rem;
+  }
+
+  .message--container {
+    margin-block-start: 0;
+  }
+
+  .success--message button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;  
+    white-space: nowrap; 
+    text-align: center;    
+    font-size: 1rem;        
+    line-height: 1;
+    padding: 1em 1.2em;
+    font-weight: var(--fw-regular);
+  }
+
+  .success--message button {
     font-size: 0.8rem;
     padding: 0.5rem 6.4rem;
   }
 
-  .success-message button:hover {
-    background-color: linear-gradient(to right, var(--clr-red), var(--clr-orangered));
+  .success--message button:hover {
+    background: linear-gradient(to right, var(--clr-red), var(--clr-orangered));
   }
 }
 
