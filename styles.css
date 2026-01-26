@@ -306,6 +306,13 @@ body {
   .main__signup--copy {
     padding-inline: 0;
   }
+
+  .main__success--block {
+    width: clamp(22rem, 65vw, 45rem);
+    border-radius: var(--space-sm);
+    margin: 0 auto;
+    padding-inline: 1.5rem;
+  }
 }
 
 
@@ -410,7 +417,7 @@ body {
   }
 
   .success--message {
-    width: 23.175rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -418,23 +425,24 @@ body {
     gap: 0;
     background: var(--clr-white);
     border-radius: 1rem;
-    padding: var(--space-lg);
+    padding: var(--space-xlg);
   }
 
   .success--message img {
     width: 3rem;
     height: 3rem;
-    margin-block-end: var(--space-md);
+    margin-block-end: var(--space-lg);
   }
 
   .success--message h1 {
-    margin-block-end: 0.8rem;
-    line-height: 1.1;
+    font-size: 3rem;
+    margin-block-end: var(--space-md);
+    line-height: 1;
   }
 
   .success--message p {
     font-size: 0.85rem;
-    margin-block-end: 1.5rem;
+    margin-block-end: var(--space-md);
   }
 
   .message--container {
@@ -446,17 +454,13 @@ body {
     align-items: center;
     justify-content: center;
     align-self: stretch;  
-    white-space: nowrap; 
-    text-align: center;    
-    font-size: 1rem;        
-    line-height: 1;
-    padding: 1em 1.2em;
-    font-weight: var(--fw-regular);
-  }
-
-  .success--message button {
+    border-radius: 0.4rem;
     font-size: 0.8rem;
-    padding: 0.5rem 6.4rem;
+    font-weight: var(--fw-regular);      
+    line-height: 1;
+    padding: 0.5rem 9rem;
+    text-align: center;   
+    white-space: nowrap;  
   }
 
   .success--message button:hover {
