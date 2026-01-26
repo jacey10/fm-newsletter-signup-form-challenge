@@ -196,6 +196,14 @@ body {
   margin-block-end: 0.5rem;
 }
 
+.email--error {
+  color: var(--clr-red);
+}
+
+.email--error:empty {
+  display: none;
+}
+
 .field-button-container {
   display: flex;
   flex-direction: column;
@@ -212,6 +220,12 @@ body {
   border: 1px solid var(--clr-grey);
   padding-block: 0.8rem;
   padding-inline-start: 1.5rem;
+}
+
+input.invalid {
+  border: 1px solid var(--clr-red);
+  background-color:hsl(0, 60%, 92%);
+  color: var(--clr-red);
 }
 
 .field-button-container button {
