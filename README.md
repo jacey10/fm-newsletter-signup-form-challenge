@@ -32,11 +32,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/1%20Frontend%20Mentor%20-%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
+![](./assets/images/3%20Frontend%20Mentor%20-%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
+![](./assets/images/0%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
 
 ### Links
-- Solution URL: (https://github.com/jacey10/fm-recipe-page-challenge)
-- Live Site URL: (https://jacey10.github.io/fm-recipe-page-challenge/)
+- Solution URL: (https://github.com/jacey10/fm-newsletter-signup-form-challenge)
+- Live Site URL: (https://jacey10.github.io/fm-newsletter-signup-form-challenge/)
 
 ## My process
 
@@ -46,37 +48,19 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Accessibility in mind
 
 
 ### What I learned
-- I had a better understanding of how to use flexbox to create responsive layouts and where to use it.
-- I haven't really worked with lists and tables in a long time. Neither did I have fully understand how to style them. While doing so, I stumbled on some problems like choosing the right border-bottom for the table and styling markers for list. This challenge gave me the opportunity to learn a lot more about how to do all these.
-- I had a better understanding of "width:100%" and how elements with this property expands to fill the width of their containers.
-- I implemented the mobile first design, before writing media queries for larger screens (i.e. tablets and desktops).
-- With the aid of ChatGPT, I learned how to use customers markers instead of default list markers to avoid layout issues.
+- How to create better layouts that fits perfectly depending on the users screen size/width.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 ### Continued development
-- I would continue to explore how to create layouts that are responsive across many screens and devices.
-- I would learn more about styling lists and tables.
-- I would also learn more about using Absolute positioning.
+- I would continue to explore and deepen my understanding of various JavaScript fundamentals, such as, Functions, Objects, Event Handlers, Event Listeners, Mouse Events, etc.
+
 
 ### Useful resources
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- ChatGPT for quick fixes and form validation using Regex
 
 
 ## Author
@@ -85,4 +69,6 @@ const proudOfThisFunc = () => {
 - Twitter - [@jacey_opara](https://x.com/jacey_opara)
 
 ## Acknowledgments
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I got some inspiration on how to create optimal layouts (for the interface depending on users device width) from Shanto Paul's solution. 
+- His profile: (https://www.frontendmentor.io/profile/shantoopaul)
+- The repo: (https://github.com/shantoopaul/newsletter-sign-up-with-success-message)
