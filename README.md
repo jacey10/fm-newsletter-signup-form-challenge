@@ -32,9 +32,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/1%20Frontend%20Mentor%20-%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
-![](./assets/images/3%20Frontend%20Mentor%20-%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
-![](./assets/images/0%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
+![](assets/images/1%20Frontend%20Mentor%20-%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
+![](assets/images/3%20Frontend%20Mentor%20-%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
+![](assets/images/0%20Newsletter%20sign-up%20form%20with%20success%20message.png.jpg)
 
 ### Links
 - Solution URL: (https://github.com/jacey10/fm-newsletter-signup-form-challenge)
