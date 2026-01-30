@@ -210,19 +210,19 @@ body {
   gap: 1.4rem;
 }
 
-.field-button-container input, button  {
+.field-button-container .field--input, button  {
   all: unset;
   border-radius: 0.5rem;
   cursor: pointer;
 }
 
-.field-button-container input {
+.field-button-container .field--input {
   border: 1px solid var(--clr-grey);
   padding-block: 0.8rem;
   padding-inline-start: 1.5rem;
 }
 
-input.invalid {
+.field--input.error {
   border: 1px solid var(--clr-red);
   background-color:hsl(0, 60%, 92%);
   color: var(--clr-red);
@@ -408,7 +408,7 @@ input.invalid {
     gap: 1.2rem;
   }
 
-  .field-button-container input, .field-button-container button {
+  .field-button-container .field--input, .field-button-container button {
     border-radius: 0.5rem;
     padding: 0.8rem;
   }
