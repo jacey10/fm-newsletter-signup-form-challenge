@@ -52,7 +52,13 @@ Users should be able to:
 
 
 ### What I learned
-- How to create better layouts that fits perfectly depending on the users screen size/width.
+- Responsiveness: This project really pushed me to learn how to create better layouts that fits perfectly depending on the users screen size/width. Initially, I wasn't satisfied with how the layout for tablet widths look like. So, I checked out other solutions and found one that looks really good and emulated it.
+
+- JavaScript validation: I learned how to check user input in real time and handle errors gracefully. I also learned how to validate and email using JS Regex.
+
+- User experience flow: I made interactions smooth and intuitive (form → validation → success).
+
+- Debugging & testing: I ensured my code works across different scenarios.
 
 
 ### Continued development
@@ -60,7 +66,7 @@ Users should be able to:
 
 
 ### Useful resources
-- ChatGPT for quick fixes and form validation using Regex
+- ChatGPT and Claude for quick fixes, debugging and form validation using Regex.
 
 
 ## Author
