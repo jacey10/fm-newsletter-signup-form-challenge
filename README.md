@@ -70,9 +70,10 @@ Users should be able to:
 
 
 ## Author
-- Website - [James Chima](https://www.your-site.com)
+
+- Website - [Jacey Blog](https://www.jacey.hashnode.dev/)
 - Frontend Mentor - [@jacey10](https://www.frontendmentor.io/profile/jacey10)
-- Twitter - [@jacey_opara](https://x.com/jacey_opara)
+- Twitter - [@jacey_muna](https://x.com/jacey_muna)
 
 ## Acknowledgments
 I got some inspiration on how to create optimal layouts (for the interface depending on users device width) from Shanto Paul's solution. 
